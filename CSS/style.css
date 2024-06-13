@@ -1,0 +1,94 @@
+body{
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    color: var(--color-primery-dark);
+}
+.logo {
+    /* logo */
+
+    width: 83px;
+    height: 42px;
+
+    font-family: 'Play';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 21px;
+    /* or 88% */
+    text-transform: capitalize;
+
+    /* beauty landing 2/с2 */
+    color: #2B7FFF;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    display: block;
+}
+button:hover {
+    background-color: blue;
+}
+h1{
+    color: rgba(43, 127, 255, 1);
+    font-family: Play;
+    font-size: 140px;
+    font-weight: 700;
+    line-height: 114px;
+    text-align: left;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+button {
+    color: white;
+    background-color: rgba(43, 127, 255, 1);
+    border: 2px solid black;
+    border-radius: 8px;
+    cursor: pointer;
+}
+span{
+    color: rgba(43, 127, 255, 1);
+}
+header{
+    margin: auto;
+    display: block;
+    background-image: url("../Photos/background.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 657.93px;
+}
+li{
+    /* Про нас */
+    
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 21px;
+        /* identical to box height */
+    
+        /* beauty landing 2/с2 */
+        color: #2B7FFF;
+    
+    
+        /* Inside auto layout */
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+.background{
+background: linear-gradient(38.2deg, rgba(43, 127, 255, 0.2) 39.74%, rgba(43, 127, 255, 0) 54.16%, rgba(43, 127, 255, 0) 66.66%);
+display: block;
+width: 100%;
+height: auto;
+}
+h2,h3{
+    font-family: Play;
+}
