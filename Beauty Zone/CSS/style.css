@@ -2,34 +2,92 @@ body{
     font-family: Roboto, Arial, Helvetica, sans-serif;
     color: var(--color-primery-dark);
 }
-.logo {
-    /* logo */
+button:hover {
+    background-color: blue;
+}
+button{
+    font-family: Roboto;
+    width: 220px ;
+    height: 50px;
+    border-radius: 32px;
+    color: white;
+    background-color: rgba(43, 127, 255, 1);
+    border: 1px solid black;
+    cursor: pointer;
+}
+span{
+    color: rgba(43, 127, 255, 1);
+}
+li{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    color: #2B7FFF;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
 
+main{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+/* header*/
+header {
+    margin: auto;
+    display: block;
+    background-image: url("../Photos/background.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    max-width: 1440px;
+    width: 100%;
+    max-height: 1900px;
+    height: 700px;
+}
+.logo {
     width: 83px;
     height: 42px;
-
     font-family: 'Play';
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
     line-height: 21px;
-    /* or 88% */
     text-transform: capitalize;
-
-    /* beauty landing 2/с2 */
     color: #2B7FFF;
-
-
-    /* Inside auto layout */
     flex: none;
     order: 0;
     flex-grow: 0;
     display: block;
 }
-button:hover {
-    background-color: blue;
+.navigation{
+    width: 100%;
+    height: 106px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgba(255, 255, 255, 0.25);;
 }
-h1{
+
+.extra-info{
+    width: 525px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.icons{
+    width: 160px;
+    height: 32px;
+    display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+}
+h1 {
     color: rgba(43, 127, 255, 1);
     font-family: Play;
     font-size: 140px;
@@ -39,56 +97,97 @@ h1{
     margin-top: 0px;
     margin-bottom: 20px;
 }
-button {
-    color: white;
-    background-color: rgba(43, 127, 255, 1);
-    border: 2px solid black;
-    border-radius: 8px;
-    cursor: pointer;
+
+.call{
+    width: 529px;
+   padding-left: 206px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }
-span{
-    color: rgba(43, 127, 255, 1);
+
+.description{
+    width: 238px;
+    height: 36px;
 }
-header{
-    margin: auto;
-    display: block;
-    background-image: url("../Photos/background.jpg");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    width: 100%;
-    height: 657.93px;
+
+/* main-first section*/
+.first-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: center;
+    width: 1240px;
+    height: 700px;
+    gap: 20px;
 }
-li{
-    /* Про нас */
-    
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 18px;
-        line-height: 21px;
-        /* identical to box height */
-    
-        /* beauty landing 2/с2 */
-        color: #2B7FFF;
-    
-    
-        /* Inside auto layout */
-        flex: none;
-        order: 0;
-        flex-grow: 0;
+
+.first-section-text-information{
+    width: 710px;
+    height: 450px;
+    padding: 30px;
 }
-a{
-    text-decoration: none;
-}
-ul{
-    list-style-type: none;
-}
-.background{
-background: linear-gradient(38.2deg, rgba(43, 127, 255, 0.2) 39.74%, rgba(43, 127, 255, 0) 54.16%, rgba(43, 127, 255, 0) 66.66%);
-display: block;
-width: 100%;
-height: auto;
-}
-h2,h3{
+
+.title-first-section{
     font-family: Play;
+    font-size: 65px;
+    font-weight: 700;
+    width: 530px;
+    height: 150px;
+}
+
+.first-paragraf-fist-section{
+    width: 700px;
+    height: 75px;
+    font-family: Roboto;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.second-paragraf-fist-section{
+    width: 700px;
+    height: 150px;
+    font-family: Roboto;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.first-paragraf-images{
+    width: 500px;
+    height: 695px;
+}
+.first-paragraf-images-second-image{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+/* main-second section*/
+
+.second-section {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    flex-direction: column;
+    text-align: center;
+    width: 1100px;
+    height: 380px;
+}
+
+.title-correction{
+    display: flex;
+    justify-content: center;
+}
+.title-second-section {
+    text-align: center;
+    width: 440px;
+    height: 150px;
+    font-family: Play;
+    font-size: 64px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.text-second-section{
+display: flex;
+justify-content: space-between;
 }

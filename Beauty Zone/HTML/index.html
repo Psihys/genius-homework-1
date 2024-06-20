@@ -16,15 +16,15 @@
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="navigation">
             <a href="http://127.0.0.1:5500/First%20project/HTML/First.html" class="logo">Beauty zone</a>
-            <ul>
+            <ul class="extra-info">
                 <li><a href="#about us">Про нас</a></li>
                 <li><a href="#why we">Чому ми</a></li>
                 <li><a href="#Our procedures">Наші процедури</a></li>
                 <li><a href="#How to find us">Контакти</a></li>
             </ul>
-            <ul>
+            <ul class="icons">
                 <li>
                     <img src="../Photos/Phone.jpg" alt=" phone ">
                 </li>
@@ -36,7 +36,7 @@
                 </li>
             </ul>
         </nav>
-        <section>
+        <section class="call">
             <article>
                 <p>
                     Косметологічна клініка
@@ -50,7 +50,7 @@
                 <button type="button">
                     Замовити дзвінок
                 </button>
-                <p>
+                <p class="description">
                     Запишись та отримай безкоштовну консультацію нашого косметолога
                 </p>
             </article>
@@ -58,53 +58,61 @@
     </header>
 
     <main>
-        <section id="about us">
-            <h2>
+        <section id="about us" class="first-section">
+           <article class="first-section-text-information">
+            <h2 class="title-first-section">
                 Перевтілюйтесь в <span>beauty zone!</span>
             </h2>
-            <p>
+            <p class="first-paragraf-fist-section">
                 Наша косметологічна клініка пропонує вам професійні послуги
                 з догляду за шкірою обличчя та тіла.
             </p>
-            <p>
+            <p class="second-paragraf-fist-section">
                 B beauty zone ми гарантуємо найвищі стандарти якості
                 та приємний сервіс. Наші косметологічні процедури та препарати допоможуть вам підтримувати свою красу та молодість.
                 З нами краса назавжди!
             </p>
-            <aside>
+           </article>
+            <article class="first-paragraf-images">
                 <img src="../Photos/mask.jpg" alt="mask">
-                <img src="../Photos/mask1.jpg" alt="mask">
-            </aside>
+                <div class="first-paragraf-images-second-image">
+                    <img src="../Photos/mask1.jpg" alt="mask">
+                </div>
+            </article>
         </section>
-        <section class="background" id="why we">
-            <h2>
-                Чому люди <span>обирають нас</span>
-            </h2>
-            <article>
-                <h3>
-                    <img src="../Photos/science.jpg" alt="медичнa освіту">
-                </h3>
-                <p>
-                    Всі наші косметологи мають вищу медичну освіту
-                    та стаж роботи від 5 років
-                </p>
-            </article>
-            <article>
-                <h3>
-                <img src="../Photos/products.jpg" alt="професійне обладнання">
-                </h3>
-                <p>
-                Використовуємо тільки професійне обладнання та косметику, перевірену часом
-                </p>
-            </article>
-            <article>
-                <h3>
-                <img src="../Photos/advantages.jpg" alt="переваги">
-                </h3>
-                <p>
-                Наша мета - підкреслити переваги та приховати недоліки, а не переробити
-                </p>
-            </article>
+        <section  class="second-section" id="why we">
+              <div class="title-correction">
+                <h2 class="title-second-section">
+                    Чому люди <span>обирають нас</span>
+                </h2>
+              </div>
+                <div class="text-second-section">
+                    <article>
+                        <h3>
+                            <img src="../Photos/science.jpg" alt="медичнa освіту">
+                        </h3>
+                        <p>
+                            Всі наші косметологи мають вищу медичну освіту
+                            та стаж роботи від 5 років
+                        </p>
+                    </article>
+                    <article>
+                        <h3>
+                            <img src="../Photos/products.jpg" alt="професійне обладнання">
+                        </h3>
+                        <p>
+                            Використовуємо тільки професійне обладнання та косметику, перевірену часом
+                        </p>
+                    </article>
+                    <article>
+                        <h3>
+                            <img src="../Photos/advantages.jpg" alt="переваги">
+                        </h3>
+                        <p>
+                            Наша мета - підкреслити переваги та приховати недоліки, а не переробити
+                        </p>
+                    </article>
+                </div>
         </section>
         <section id="Our procedures">
             <h2>
