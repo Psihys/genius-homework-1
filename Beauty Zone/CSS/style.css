@@ -43,7 +43,7 @@ header {
     display: block;
     background-image: url("../Photos/background.jpg");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     max-width: 1440px;
     width: 100%;
     max-height: 1900px;
@@ -59,9 +59,6 @@ header {
     line-height: 21px;
     text-transform: capitalize;
     color: #2B7FFF;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
     display: block;
 }
 .navigation{
@@ -161,7 +158,7 @@ h1 {
     flex-direction: row-reverse;
 }
 
-/* main-second section*/
+/* main-second-section*/
 
 .second-section {
     display: flex;
@@ -171,6 +168,7 @@ h1 {
     text-align: center;
     width: 1100px;
     height: 380px;
+    margin: auto 20px;
 }
 
 .title-correction{
@@ -184,10 +182,95 @@ h1 {
     font-family: Play;
     font-size: 64px;
     font-weight: 700;
-    margin: 0;
+    margin: auto;
 }
 
 .text-second-section{
 display: flex;
 justify-content: space-between;
+}
+
+.squares{
+    width: 316px;
+    height: 180px;
+    border-radius: 32px;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0px 4px 4px 0px rgba(168, 198, 245, 0.38);
+}
+
+.squares-content{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    width: 252px;
+    height: 133px;
+    gap: 8px;
+}
+
+/* main-third-section*/
+.main-third-section{
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    flex-direction: column;
+    max-width: 1200px;
+    height: 620px;
+}
+
+.title-third-section{
+    position: relative;
+    text-align: center;
+    width: 510px;
+    height: 75px;
+    margin: 20px auto;
+    font-family: 'Play';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 74px;
+}
+
+.images-third-section{
+display: flex;
+flex-direction: row;
+align-self: flex-end;
+max-width: 1200px;
+height: 500px;
+}
+.images-correction-third-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* main-last-section*/
+
+.main-last-section{
+display: flex;
+align-self: center;
+flex-direction: column;
+width: 1060px;
+height: 600px;
+margin: auto;
+}
+
+.main-last-section-title{
+    position: relative;
+    text-align: center;
+    width: 500px;
+    height: 75px;
+    margin: 20px auto;
+    font-family: 'Play';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 74px;
+}
+
+.map-and-contacts-info{
+    display: flex;
+    justify-content: space-between;
+
 }
