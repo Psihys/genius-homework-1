@@ -272,5 +272,71 @@ margin: auto;
 .map-and-contacts-info{
     display: flex;
     justify-content: space-between;
+   
+}
 
+.contact-and-info{
+    width: 420px;
+    height: 482px;
+    border-radius: 32px;
+    background-color: rgba(1, 28, 68, 1);
+    border: 4px solid rgba(1, 31, 74, 1)
+}
+
+.contact-form{
+    text-align: center;
+    width: 310px;
+    height: 385px;
+    margin: auto;
+}
+.contact-form-title{
+    text-align: center;
+    width: 274px;
+    height: 52px;
+    font-family: Roboto;
+    font-size: 22px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 1);
+}
+
+.appointment{
+    width: 310px;
+    height: 300px;
+}
+.form-settings{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+.input-settings{
+    width: 310px;
+    height: 52px;
+    border-radius: 32px;
+    border: 2px solid rgba(116, 114, 114, 1);
+}
+
+.submit-settings{
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgba(250, 244, 234, 1);
+    width: 280px;
+    height: 53px;
+    border-radius: 32px;
+    padding: 16px 32px 16px 32px;
+    cursor: pointer;
+    background-color: rgba(43, 127, 255, 1);
+}
+
+.appointment-paragraf{
+    text-align: center;
+    width: 210px;
+    height: 35px;
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 400;
+    color: rgba(116, 114, 114, 1);
+    margin: auto;
 }

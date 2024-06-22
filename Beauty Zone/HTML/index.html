@@ -17,7 +17,7 @@
 <body>
     <header>
         <nav class="navigation">
-            <a href="http://127.0.0.1:5500/First%20project/HTML/First.html" class="logo">Beauty zone</a>
+            <a href="../HTML/index.html" class="logo">Beauty zone</a>
             <ul class="extra-info">
                 <li><a href="#about us">Про нас</a></li>
                 <li><a href="#why we">Чому ми</a></li>
@@ -148,12 +148,37 @@
                 Як нас <span>знайти?</span>
             </h2>
          </div>
-           <div>
+           <div class="map-and-contacts-info">
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2537.475793194489!2d30.772648477137196!3d50.50671337160305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d97de411b701%3A0x48116b28f7f00d94!2z0YPQuy4g0KLQsNGA0LDRgdCwINCo0LXQstGH0LXQvdC60L4sIDUsINCR0YDQvtCy0LDRgNGLLCDQmtC40LXQstGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCDQo9C60YDQsNC40L3QsCwgMDc0MDA!5e0!3m2!1sru!2sbe!4v1718225730286!5m2!1sru!2sbe"
                 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade">
             </iframe>
+            <section class="contact-and-info">
+                <article class="contact-form">
+                    <h3 class="contact-form-title">
+                        Запишіться <span>безкоштовно</span>
+                        та отримайте подарунок
+                    </h3>
+
+                       <div class="appointment">
+                        <form action="" class="form-settings">
+                            <label for="First-name/Last-name"></label>
+                            <input class="input-settings" type="text" id="f/lname" placeholder="Firts-name and Laxt-name" name="f/lname">
+                            <label for="phone"></label>
+                            <input class="input-settings" type="tel" id="phone" placeholder="Enter your phone number:" name="phone"
+                                pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+                            <label for="email"></label>
+                            <input class="input-settings" type="email" id="email" placeholder="Enter your email:" name="email">
+                            <input class="submit-settings" type="submit" value="Submit">
+                        </form>
+                        <p class="appointment-paragraf"> 
+                            Натискаючи на кнопку я погоджуюсь з політикою конфіденційності
+                        </p>
+                       </div>
+
+                </article>
+            </section>
            </div>
         </section>
     </main>
