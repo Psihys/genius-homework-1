@@ -340,3 +340,9 @@ margin: auto;
     color: rgba(116, 114, 114, 1);
     margin: auto;
 }
+
+.map{
+    width: 600px;
+    height: 490px;
+    border-radius: 32px;
+}
