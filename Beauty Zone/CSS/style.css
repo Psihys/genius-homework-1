@@ -1,7 +1,4 @@
-body{
-    font-family: Roboto, Arial, Helvetica, sans-serif;
-    color: var(--color-primery-dark);
-}
+
 button:hover {
     color: rgba(1, 28, 68, 1);
     background-color: transparent;
@@ -21,11 +18,7 @@ span{
     color: rgba(43, 127, 255, 1);
 }
 li{
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    color: #2B7FFF;
+    
 }
 a{
     text-decoration: none;
@@ -75,6 +68,21 @@ header {
     background-color: rgba(255, 255, 255, 0.25);;
 }
 
+.navigation-text-color{
+    font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+    color: rgba(0, 0, 0, 1);
+}
+
+.about-us{
+    font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+}
+
 .extra-info{
     width: 525px;
     display: flex;
@@ -109,8 +117,16 @@ h1 {
     gap: 40px;
 }
 
+.call-paragraf{
+    width: 200px;
+    height: 20px;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+}
+
 .description{
-    width: 238px;
+    width: 240px;
     height: 36px;
 }
 
@@ -215,13 +231,53 @@ justify-content: space-between;
 
 /* main-third-section*/
 .main-third-section{
-    margin: auto;
+    margin: 50px auto;
     display: flex;
     justify-content: center;
     align-self: center;
     flex-direction: column;
-    max-width: 1200px;
-    height: 620px;
+    max-width: 1216px;
+    height: 500px;
+}
+
+.arrowes-button-1{
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        align-self: flex-start;
+        width: 44px;
+        height: 44px;
+        background: transparent;
+        border: 1px solid black;
+        border-radius: 50%;
+}
+
+.arrowes-1{
+fill: rgba(255, 255, 255, 1);
+width: 16px;
+height: 1px;
+border: 2px solid rgba(1, 28, 68, 1)
+}
+
+.arrowes-button-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    align-self: flex-end;
+    width: 44px;
+    height: 44px;
+    background: transparent;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.arrowes-2{
+fill: rgba(255, 255, 255, 1);
+    width: 16px;
+    height: 1px;
+    border: 2px solid rgba(1, 28, 68, 1);
 }
 
 .title-third-section{
@@ -235,7 +291,7 @@ justify-content: space-between;
     font-weight: 700;
     font-size: 64px;
     line-height: 74px;
-}s
+}
 
 .images-third-section{
     margin: auto;
