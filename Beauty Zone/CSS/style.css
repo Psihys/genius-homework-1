@@ -3,7 +3,9 @@ body{
     color: var(--color-primery-dark);
 }
 button:hover {
-    background-color: blue;
+    color: rgba(1, 28, 68, 1);
+    background-color: transparent;
+    border: 2px solid rgba(43, 127, 255, 1);
 }
 button{
     font-family: Roboto;
@@ -33,9 +35,11 @@ ul{
 }
 
 main{
-    margin-top: 30px;
-    display: flex;
-    flex-direction: column;
+   margin: auto;
+    display: block;
+}
+.container{
+    margin: auto;
 }
 /* header*/
 header {
@@ -67,6 +71,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
     background-color: rgba(255, 255, 255, 0.25);;
 }
 
@@ -83,6 +88,7 @@ header {
     display: flex;
         flex-direction: row;
         justify-content: space-between;
+        padding: 0;
 }
 h1 {
     color: rgba(43, 127, 255, 1);
@@ -109,7 +115,7 @@ h1 {
 }
 
 /* main-first section*/
-.first-section{
+.first-section{margin: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -168,7 +174,7 @@ h1 {
     text-align: center;
     width: 1100px;
     height: 380px;
-    margin: auto 20px;
+    margin: auto;
 }
 
 .title-correction{
@@ -209,7 +215,7 @@ justify-content: space-between;
 
 /* main-third-section*/
 .main-third-section{
-    margin-top: 70px;
+    margin: auto;
     display: flex;
     justify-content: center;
     align-self: center;
@@ -223,15 +229,16 @@ justify-content: space-between;
     text-align: center;
     width: 510px;
     height: 75px;
-    margin: 20px auto;
+    margin: auto;
     font-family: 'Play';
     font-style: normal;
     font-weight: 700;
     font-size: 64px;
     line-height: 74px;
-}
+}s
 
 .images-third-section{
+    margin: auto;
 display: flex;
 flex-direction: row;
 align-self: flex-end;
@@ -291,7 +298,7 @@ margin: auto;
 }
 .contact-form-title{
     text-align: center;
-    width: 274px;
+    width: 300px;
     height: 52px;
     font-family: Roboto;
     font-size: 22px;
@@ -311,6 +318,7 @@ margin: auto;
     gap: 16px;
 }
 .input-settings{
+    padding-left: 30px;
     width: 310px;
     height: 52px;
     border-radius: 32px;
@@ -332,7 +340,7 @@ margin: auto;
 
 .appointment-paragraf{
     text-align: center;
-    width: 210px;
+    width: 220px;
     height: 35px;
     font-family: Roboto;
     font-size: 12px;
@@ -346,3 +354,76 @@ margin: auto;
     height: 490px;
     border-radius: 32px;
 }
+
+/* footer */
+
+.contact-information{
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 50px auto;
+width: 1440px;
+height: 280px;
+background: rgba(1, 28, 68, 1);
+}
+
+.footer-section{
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    margin: auto;
+    width: 1240px;
+    height: 166px;
+}
+
+.logo-footer{
+    width: 83px;
+    height: 42px;
+    font-family: Play;
+    font-size: 24px;
+    font-weight: 700;
+    color: rgba(43, 127, 255, 1);
+}
+
+.footer-links{
+    color: rgba(255, 255, 255, 1);;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+}
+.info-about-us{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    width: 200px;
+    height: 125px;
+    gap: 16px;
+}
+
+.address-footer{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    width: 190px;
+    height: 166px;
+    gap: 16px;
+}
+
+.policy-footer{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 203px;
+    height: 50px;
+}
+
+.policy-footer-paragraf{
+    font-family: Roboto;
+    font-size: 13px;
+    font-weight: 400;
+    color: rgba(116, 114, 114, 1);
+}
+
+

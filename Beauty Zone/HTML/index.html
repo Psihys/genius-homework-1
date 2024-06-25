@@ -14,25 +14,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beauty zone</title>
 </head>
-<body>
+<body class="container">
     <header>
         <nav class="navigation">
             <a href="../HTML/index.html" class="logo">Beauty zone</a>
             <ul class="extra-info">
-                <li><a href="#about us">Про нас</a></li>
-                <li><a href="#why we">Чому ми</a></li>
-                <li><a href="#Our procedures">Наші процедури</a></li>
-                <li><a href="#How to find us">Контакти</a></li>
+                <li><a href="#about-us"><span>Про нас</span></a></li>
+                <li><a href="#why-we">Чому ми</a></li>
+                <li><a href="#Our-procedures">Наші процедури</a></li>
+                <li><a href="#How-to-find-us">Контакти</a></li>
             </ul>
             <ul class="icons">
                 <li>
-                    <img src="../Photos/Phone.jpg" alt=" phone ">
+                    <a href="tel:+380960000007">
+                        <img src="../Photos/Phone.svg" alt=" phone ">
+                    </a>
                 </li>
                 <li>
-                    <img src="../Photos/facebook.jpg" alt="facebook">
+                    <a href="https://www.facebook.com/">
+                        <img src="../Photos/facebook.svg" alt="facebook">
+                    </a>
                 </li>
                 <li>
-                    <img src="../Photos/Instagram.jpg" alt="instagram">
+                    <a href="https://www.instagram.com/">
+                        <img src="../Photos/Instagram.svg" alt="instagram">
+                    </a>
                 </li>
             </ul>
         </nav>
@@ -58,7 +64,7 @@
     </header>
 
     <main>
-        <section id="about us" class="first-section">
+        <section id="about-us" class="first-section">
            <article class="first-section-text-information">
             <h2 class="title-first-section">
                 Перевтілюйтесь в <span>Beauty zone!</span>
@@ -81,7 +87,8 @@
             </article>
         </section>
 
-        <section  class="second-section" id="why we">
+
+        <section  class="second-section" id="why-we">
               <div class="title-correction">
                 <h2 class="title-second-section">
                     Чому люди <span>обирають нас</span>
@@ -122,7 +129,13 @@
                 </div>
         </section>
 
-        <section class="main-third-section" id="Our procedures">
+<background class="background-section">
+    <position class="background-div">
+
+    </position>
+</background>
+
+        <section class="main-third-section" id="Our-procedures">
            <div>
             <h2 class="title-third-section">
                 Наші <span>процедури</span>
@@ -142,7 +155,7 @@
             </ul>
            </div>
          </section>
-        <section class="main-last-section" id="How to find us">
+        <section class="main-last-section" id="How-to-find-us">
          <div>
             <h2 class="main-last-section-title">
                 Як нас <span>знайти?</span>
@@ -160,11 +173,10 @@
                         Запишіться <span>безкоштовно</span>
                         та отримайте подарунок
                     </h3>
-
                        <div class="appointment">
-                        <form action="" class="form-settings">
-                            <label for="First-name/Last-name"></label>
-                            <input class="input-settings" type="text" id="f/lname" placeholder="Firts-name and Laxt-name" name="f/lname">
+                        <form action="http://127.0.0.1:5501/Beauty%20Zone/HTML/index.html" class="form-settings">
+                            <label for="name"></label>
+                            <input class="input-settings" type="text" id="name" placeholder="Firts-name and Laxt-name" name="f/lname">
                             <label for="phone"></label>
                             <input class="input-settings" type="tel" id="phone" placeholder="Enter your phone number:" name="phone"
                                 pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
@@ -176,43 +188,54 @@
                             Натискаючи на кнопку я погоджуюсь з політикою конфіденційності
                         </p>
                        </div>
-
                 </article>
             </section>
            </div>
         </section>
     </main>
 
-    <footer>
-        <nav>
-            <a class="logo" href="./First.html">beauty zone</a>
-            <ul>
-            <li><a href="#about us">Про нас</a></li>
-            <li><a href="#why we">Чому ми</a></li>
-            <li><a href="#Our procedures">Наші процедури</a></li>
-            <li><a href="#How to find us">Контакти</a></li>
-            </ul>
+    <footer class="contact-information">
+        <section class="footer-section">
+            <a class="logo-footer" href="./First.html">Beauty zone</a>
+            <nav>
+                <ul class="info-about-us">
+                    <li><a class="footer-links" href="#about-us"><span>Про нас</span></a></li>
+                    <li><a class="footer-links" href="#why-we">Чому ми</a></li>
+                    <li><a class="footer-links" href="#Our-procedures">Наші процедури</a></li>
+                    <li><a class="footer-links" href="#How-to-find-us">Контакти</a></li>
+                </ul>
             
-        </nav>
-        <address>
-            <ul>
-                <li><a href="tel:+380960000007">+ 38 (096) 000 00 07</a></li>
-                <li><a href="mailto:beautyzone@gmail.com">beautyzone@gmail.com</a></li>
-                <li><a href="https://maps.app.goo.gl/L4k9ESt9F9tGQ2EY6" target="_blank">Україна, м. Київ,
-                вул. Тараса Шевченка 5</a></li>
-                <li>
-                    <img src="../Photos/Phone.jpg" alt=" phone ">
-                </li>
-                <li>
-                    <img src="../Photos/facebook.jpg" alt="facebook">
-                </li>
-                <li>
-                    <img src="../Photos/Instagram.jpg" alt="переваги">
-                </li>
-            </ul>
-            <a href="">Політика конфіденційності</a>
-            <p> &copy; 2022 Дані захищені</p>
-        </address>
+            </nav>
+            <address class="address-footer">
+                <ul class="address-footer">
+                    <li><a class="footer-links" href="tel:+380960000007">+ 38 (096) 000 00 07</a></li>
+                    <li><a class="footer-links" href="mailto:beautyzone@gmail.com">beautyzone@gmail.com</a></li>
+                    <li><a class="footer-links" href="https://maps.app.goo.gl/L4k9ESt9F9tGQ2EY6" target="_blank">Україна, м. Київ,
+                            вул. Тараса Шевченка 5</a></li>
+                </ul>
+                <ul class="icons">
+                    <li>
+                        <a href="tel:+380960000007">
+                            <img src="../Photos/telefoon-footer.svg" alt="phone">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/">
+                            <img src="../Photos/facebook-footer.svg" alt="facebook">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/">
+                            <img src="../Photos/instagram-footer.svg" alt="instagram">
+                        </a>
+                    </li>
+                </ul>
+            </address>
+            <div class="policy-footer">
+                <a class="footer-links" href="">Політика конфіденційності</a>
+                <p class="policy-footer-paragraf"> &copy; 2022 Дані захищені</p>
+            </div>
+        </section>
     </footer>
 </body>
 </html>
