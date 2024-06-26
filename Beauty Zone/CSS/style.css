@@ -17,9 +17,6 @@ button{
 span{
     color: rgba(43, 127, 255, 1);
 }
-li{
-    
-}
 a{
     text-decoration: none;
 }
@@ -30,10 +27,22 @@ ul{
 main{
    margin: auto;
     display: block;
+    width: 1440px;
 }
 .container{
     margin: auto;
 }
+/* 
+.background-svg{
+    margin: auto;
+    display: block;
+    position: absolute;
+    width: 1850px;
+    height: 1785px;
+    left: 1200px;
+    top: 1300px;
+
+} */
 /* header*/
 header {
     margin: auto;
@@ -70,17 +79,17 @@ header {
 
 .navigation-text-color{
     font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
     color: rgba(0, 0, 0, 1);
 }
 
 .about-us{
     font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
 }
 
 .extra-info{
@@ -94,9 +103,9 @@ header {
     width: 160px;
     height: 32px;
     display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 0;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
 }
 h1 {
     color: rgba(43, 127, 255, 1);
@@ -306,6 +315,7 @@ height: 500px;
     flex-direction: row;
     justify-content: space-between;
     gap: 20px;
+    padding: 0%;
 }
 
 /* main-last-section*/
