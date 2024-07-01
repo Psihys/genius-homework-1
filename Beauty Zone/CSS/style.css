@@ -4,16 +4,6 @@ button:hover {
     background-color: transparent;
     border: 2px solid rgba(43, 127, 255, 1);
 }
-button{
-    font-family: Roboto;
-    width: 220px ;
-    height: 50px;
-    border-radius: 32px;
-    color: white;
-    background-color: rgba(43, 127, 255, 1);
-    border: 1px solid black;
-    cursor: pointer;
-}
 span{
     color: rgba(43, 127, 255, 1);
 }
@@ -116,6 +106,17 @@ h1 {
     text-align: left;
     margin-top: 0px;
     margin-bottom: 20px;
+}
+
+.call-button {
+    font-family: Roboto;
+    width: 220px;
+    height: 50px;
+    border-radius: 32px;
+    color: white;
+    background-color: rgba(43, 127, 255, 1);
+    border: 1px solid black;
+    cursor: pointer;
 }
 
 .call{
@@ -494,4 +495,46 @@ background: rgba(1, 28, 68, 1);
     color: rgba(116, 114, 114, 1);
 }
 
+/* Call-order-window */
 
+.backdrop{
+position: fixed;
+margin: auto;
+width: 1440px;
+height: 1024px;
+left: 0;
+bottom: 0;
+right: 0;
+top: 0;
+background-color: rgba(1, 31, 74, 0.4);
+}
+
+.is-hidden{
+   opacity: 0;
+   visibility: hidden;
+   pointer-events: none;
+}
+
+.backdrop-window{
+display: flex;
+justify-content: center;
+align-items: center;
+margin: auto;
+position: relative;
+width: 723px;
+height: 681px;
+top: 171px;
+left: auto;
+border-radius: 48px 0px 0px 0px;
+}
+
+.close-button{
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    top: 42px;
+    left: 500px;
+    padding: 8px 0px 0px 0px;
+    background-color: transparent;
+    color: white;
+}

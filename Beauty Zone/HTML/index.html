@@ -53,7 +53,7 @@
                 </h1>
             </article>
             <article>
-                <button onclick="window.location.href='./call/window.html'" type="button">
+                <button class="call-button" type="button">
                     Замовити дзвінок
                 </button>
                 <p class="description">
@@ -250,5 +250,38 @@
             </div>
         </section>
     </footer>
+
+<div class="is-hidden">
+<div class="backdrop-window">
+<section class="contact-and-info">
+    <button class="close-button" type="button">
+    X
+    </button>
+    <article class="contact-form">
+        <h3 class="contact-form-title">
+            Запишіться <span>безкоштовно</span>
+            та отримайте подарунок
+        </h3>
+        <div class="appointment">
+            <form action="http://127.0.0.1:5501/Beauty%20Zone/HTML/index.html" class="form-settings">
+                <label for="name"></label>
+                <input class="input-settings" type="text" id="name" placeholder="Firts-name and Laxt-name"
+                    name="f/lname">
+                <label for="phone"></label>
+                <input class="input-settings" type="tel" id="phone" placeholder="Enter your phone number:" name="phone"
+                    pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+                <label for="email"></label>
+                <input class="input-settings" type="email" id="email" placeholder="Enter your email:" name="email">
+                <input class="submit-settings" type="submit" value="Submit">
+            </form>
+            <p class="appointment-paragraf">
+                Натискаючи на кнопку я погоджуюсь з політикою конфіденційності
+            </p>
+        </div>
+    </article>
+</section>
+</div>
+</div>
+
 </body>
 </html>
