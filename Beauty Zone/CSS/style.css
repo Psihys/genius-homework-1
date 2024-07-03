@@ -395,6 +395,19 @@ margin: auto;
     height: 52px;
     border-radius: 32px;
     border: 2px solid rgba(116, 114, 114, 1);
+    background-color: transparent;
+    color: white;
+    border: 2px solid #747272;
+}
+
+.input-settings::placeholder{
+    color: white;
+}
+
+.input-settings:hover{
+    border: 2px solid #747272;
+    background-color: #747272;
+
 }
 
 .submit-settings{
@@ -520,6 +533,7 @@ bottom: 0;
 right: 0;
 top: 0;
 background-color: rgba(1, 31, 74, 0.4);
+overflow-y: auto;
 }
 
 .is-hidden{
