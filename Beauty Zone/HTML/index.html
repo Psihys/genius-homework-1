@@ -63,11 +63,10 @@
         </section>
     </header>
 
+    <!-- /* Additional background images(tree stars) */ -->
+
     <main>
         <section id="about-us" class="first-section">
-            <div class="small-star"></div>
-            <div class="medium-star"></div>
-            <div class="big-star"></div>
            <article class="first-section-text-information">
             <h2 class="title-first-section">
                 Перевтілюйтесь в <span>Beauty zone!</span>
@@ -192,12 +191,12 @@
                        <div class="appointment">
                         <form action="http://127.0.0.1:5501/Beauty%20Zone/HTML/index.html" class="form-settings">
                             <label for="name"></label>
-                            <input class="input-settings" type="text" id="name" placeholder="Firts-name and Laxt-name" name="f/lname">
+                            <input class="input-settings" type="text" id="name" placeholder="Firts-name and Last-name" minlength="2" maxlength="20" name="f/lname" required>
                             <label for="phone"></label>
                             <input class="input-settings" type="tel" id="phone" placeholder="Enter your phone number:" name="phone"
-                                pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+                                pattern="^\+[0-9]{12}" required>
                             <label for="email"></label>
-                            <input class="input-settings" type="email" id="email" placeholder="Enter your email:" name="email">
+                            <input class="input-settings" type="email" id="email" placeholder="Enter your email:" name="email" required>
                         <button type="button" class="submit-settings">Submit</button>
                         </form>
                         <p class="appointment-paragraf"> 
@@ -258,6 +257,7 @@
 <div class="backdrop-window">
 <section class="contact-and-info">
     <button class="close-button" type="button">
+        x
     </button>
     <article class="contact-form">
         <h3 class="contact-form-title">
@@ -267,13 +267,13 @@
         <div class="appointment">
             <form action="./index.html" class="form-settings" name="contact-form" autocomplete="off">
                 <label for="name"></label>
-                <input class="input-settings" type="text" id="name" placeholder="Firts-name and Laxt-name"
-                    name="f/lname">
+                <input class="input-settings" type="text" id="name" placeholder="Firts-name and Laxt-name" required
+                    name="f/lname" minlength="2" maxlength="20">
                 <label for="phone"></label>
                 <input class="input-settings" type="tel" id="phone" placeholder="Enter your phone number:" name="phone"
-                    pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+                    pattern="\+[0-9]{12}" required>
                 <label for="email"></label>
-                <input class="input-settings" type="email" id="email" placeholder="Enter your email:" name="email">
+                <input class="input-settings" type="email" id="email" placeholder="Enter your email:" name="email" required>
                 <button type="button" class="submit-settings">Submit</button>
             </form>
             <p class="appointment-paragraf">
