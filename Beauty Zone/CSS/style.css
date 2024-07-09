@@ -114,7 +114,7 @@ h1 {
     background-color: rgba(43, 127, 255, 1);
     border: 1px solid black;
     cursor: pointer;
-    transition: color 0.2s ease;
+    transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
 }
 
 .call-button:hover{
@@ -426,7 +426,7 @@ margin: auto;
     padding: 16px 32px 16px 32px;
     cursor: pointer;
     background-color: rgba(43, 127, 255, 1);
-    transition: color 5s ease;
+    transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
 }
 
 .submit-settings:hover{
@@ -567,4 +567,37 @@ border-radius: 48px 0px 0px 0px;
     padding: 8px 0px 0px 0px;
     background-color: transparent;
     color: white;
+}
+
+/* Additional background images */
+.small-star{
+    background-image: url(../Photos/Star\ 3.jpg);
+    background-repeat: no-repeat;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    top: 300px;
+    left: 1313px;
+    rotate: 23deg;
+}
+
+.medium-star{
+    background-image: url(../Photos/Star\ 2.jpg);
+    background-repeat: no-repeat;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    top: 50px;
+    left: 1313px;
+}
+
+.big-star {
+    background-image: url(../Photos/Star\ 1.jpg);
+    background-repeat: no-repeat;
+    position: relative;
+    width: 70px;
+    height: 70px;
+    top: 400px;
+    left: 1313px;
+    rotate: 23deg;
 }
