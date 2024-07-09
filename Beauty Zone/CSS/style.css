@@ -114,10 +114,11 @@ h1 {
     background-color: rgba(43, 127, 255, 1);
     border: 1px solid black;
     cursor: pointer;
+    transition: color 0.2s ease;
 }
 
 .call-button:hover{
-     color: rgba(1, 28, 68, 1);
+    color: rgba(1, 28, 68, 1);
     background-color: transparent;
     border: 2px solid rgba(43, 127, 255, 1);
 }
@@ -398,6 +399,7 @@ margin: auto;
     background-color: transparent;
     color: white;
     border: 2px solid #747272;
+    transition: color 3s ease;
 }
 
 .input-settings::placeholder{
@@ -424,6 +426,7 @@ margin: auto;
     padding: 16px 32px 16px 32px;
     cursor: pointer;
     background-color: rgba(43, 127, 255, 1);
+    transition: color 5s ease;
 }
 
 .submit-settings:hover{
