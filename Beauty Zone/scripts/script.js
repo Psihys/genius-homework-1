@@ -4,7 +4,7 @@
             const backdrop = document.getElementById("backdrop")
 
      callButton.addEventListener('click', function () {
-         backdrop.classList.remove('hidden');
+         backdrop.classList.remove('is-hidden');
          backdrop.classList.add('backdrop')
             });
 
