@@ -1,0 +1,49 @@
+/* main-second-section*/
+
+.second-section {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    flex-direction: column;
+    text-align: center;
+    width: 1100px;
+    height: 380px;
+    margin: auto;
+}
+
+.title-correction {
+    display: flex;
+    justify-content: center;
+}
+
+.title-second-section {
+    text-align: center;
+    width: 440px;
+    height: 150px;
+    font-family: Play;
+    font-size: 64px;
+    font-weight: 700;
+    margin: auto;
+}
+
+.text-second-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.squares {
+    width: 316px;
+    height: 180px;
+    border-radius: 32px;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0px 4px 4px 0px rgba(168, 198, 245, 0.38);
+}
+
+.squares-content {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    width: 252px;
+    height: 133px;
+    gap: 8px;
+}

@@ -1,0 +1,53 @@
+/* main-first section*/
+.first-section {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: center;
+    width: 1240px;
+    height: 700px;
+    gap: 20px;
+}
+
+
+
+.first-section-text-information {
+    width: 710px;
+    height: 450px;
+    padding: 30px;
+}
+
+.title-first-section {
+    font-family: Play;
+    font-size: 65px;
+    font-weight: 700;
+    width: 530px;
+    height: 150px;
+}
+
+.first-paragraf-fist-section {
+    width: 700px;
+    height: 75px;
+    font-family: Roboto;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.second-paragraf-fist-section {
+    width: 700px;
+    height: 150px;
+    font-family: Roboto;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.first-paragraf-images {
+    width: 500px;
+    height: 695px;
+}
+
+.first-paragraf-images-second-image {
+    display: flex;
+    flex-direction: row-reverse;
+}

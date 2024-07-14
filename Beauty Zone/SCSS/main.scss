@@ -13,4 +13,10 @@
 
 } */
 
-@import './utils/utils'
+@import './utils/header/_header.scss';
+@import './utils/main/_first-section.scss';
+@import'./utils/main/_second-section.scss';
+@import'./utils/main/_third-section.scss';
+@import'./utils/main/_last-section.scss';
+@import'./utils/footer/_footer.scss';
+@import'./utils/utils/_utils';

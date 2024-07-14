@@ -15,16 +15,18 @@
     <title>Beauty zone</title>
 </head>
 <body class="container">
-    <header>
-        <nav class="navigation">
-            <a href="../HTML/index.html" class="logo">Beauty zone</a>
-            <ul class="extra-info">
-                <li><a href="#about-us"><span class="about-us">Про нас</span></a></li>
-                <li><a class="navigation-text-color" href="#why-we">Чому ми</a></li>
-                <li><a class="navigation-text-color" href="#Our-procedures">Наші процедури</a></li>
-                <li><a class="navigation-text-color" href="#How-to-find-us">Контакти</a></li>
+
+
+    <header class="header">
+        <nav class="header__navigation">
+            <a href="../HTML/index.html" class="header__logo">Beauty zone</a>
+            <ul class="header__extra-info">
+                <li><a href="#about-us"><span class="header__about-us">Про нас</span></a></li>
+                <li><a class="header__navigation-text-color" href="#why-we">Чому ми</a></li>
+                <li><a class="header__navigation-text-color" href="#Our-procedures">Наші процедури</a></li>
+                <li><a class="header__navigation-text-color" href="#How-to-find-us">Контакти</a></li>
             </ul>
-            <ul class="icons">
+            <ul class="header__icons">
                 <li>
                     <a href="tel:+380960000007">
                         <img src="../Photos/Phone.svg" alt=" phone ">
@@ -42,9 +44,9 @@
                 </li>
             </ul>
         </nav>
-        <section class="call">
+        <section class="header__call">
             <article>
-                <p class="call-paragraf">
+                <p class="header__call-paragraf">
                     Косметологічна клініка
                 </p>
                 <h1>
@@ -53,10 +55,10 @@
                 </h1>
             </article>
             <article>
-                <button class="call-button" type="button">
+                <button class="header__call-button" type="button">
                     Замовити дзвінок
                 </button>
-                <p class="description">
+                <p class="header__description">
                     Запишись та отримай безкоштовну консультацію нашого косметолога
                 </p>
             </article>
@@ -66,6 +68,8 @@
     <!-- /* Additional background images(tree stars) */ -->
 
     <main>
+
+
         <section id="about-us" class="first-section">
            <article class="first-section-text-information">
             <h2 class="title-first-section">
@@ -136,14 +140,12 @@
 
       
         <section class="main-third-section" id="Our-procedures">
-
        <button class="arrowes-button-1" type="button">
         <svg class="arrowes-1">
             <use href="../Photos/sprite.svg#icon-Arrow2">
             </use>
         </svg>
        </button>
-
            <div>
             <h2 class="title-third-section">
                 Наші <span>процедури</span>
@@ -169,6 +171,8 @@
             </svg>
         </button>
          </section>
+
+
 
         <section class="main-last-section" id="How-to-find-us">
          <div>
@@ -205,7 +209,13 @@
             </section>
            </div>
         </section>
+
+
+
     </main>
+
+
+
 
     <footer class="contact-information">
         <section class="footer-section">
