@@ -34,14 +34,6 @@
     font-weight: 400;
 }
 
-.second-paragraf-fist-section {
-    width: 700px;
-    height: 150px;
-    font-family: Roboto;
-    font-size: 22px;
-    font-weight: 400;
-}
-
 .first-paragraf-images {
     width: 500px;
     height: 695px;
@@ -50,4 +42,25 @@
 .first-paragraf-images-second-image {
     display: flex;
     flex-direction: row-reverse;
+}
+
+.text-focus{
+    font-family: Roboto;
+    font-size: 22px;
+    font-weight: 600;
+    color: rgba(1, 28, 68, 1);
+}
+
+.second-paragraf-fist-section {
+    width: 700px;
+    height: 150px;
+    font-family: Roboto;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.image{
+border-radius: 50%;
+width: 335px;
+height: 330px;
 }

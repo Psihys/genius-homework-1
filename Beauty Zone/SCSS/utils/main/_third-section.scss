@@ -20,13 +20,12 @@
     background: transparent;
     border: 1px solid black;
     border-radius: 50%;
+    transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
 }
 
 .arrowes-1 {
-    fill: rgba(255, 255, 255, 1);
     width: 16px;
-    height: 1px;
-    border: 2px solid rgba(1, 28, 68, 1)
+    height: 16px;
 }
 
 .arrowes-button-2 {
@@ -40,13 +39,24 @@
     background: transparent;
     border: 1px solid black;
     border-radius: 50%;
+    transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
 }
 
 .arrowes-2 {
-    fill: rgba(255, 255, 255, 1);
     width: 16px;
-    height: 1px;
-    border: 2px solid rgba(1, 28, 68, 1);
+    height: 16px;
+}
+
+.arrowes-button-1:hover {
+    fill: white;
+    background: rgba(43, 127, 255, 1);
+    border: 0.77px solid rgba(255, 255, 255, 1)
+}
+
+.arrowes-button-2:hover {
+    fill: white;
+    background: rgba(43, 127, 255, 1);
+    border: 0.77px solid rgba(255, 255, 255, 1)
 }
 
 .title-third-section {

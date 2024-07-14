@@ -68,7 +68,9 @@
     <!-- /* Additional background images(tree stars) */ -->
 
     <main>
-
+        <div class="small-star"></div>
+        <div class="medium-star"></div>
+        <div class="hudge-star"></div>
 
         <section id="about-us" class="first-section">
            <article class="first-section-text-information">
@@ -80,15 +82,15 @@
                 з догляду за шкірою обличчя та тіла.
             </p>
             <p class="second-paragraf-fist-section">
-                B beauty zone ми гарантуємо найвищі стандарти якості
+                B <span class="text-focus">Beauty zone </span>ми гарантуємо найвищі стандарти якості
                 та приємний сервіс. Наші косметологічні процедури та препарати допоможуть вам підтримувати свою красу та молодість.
                 З нами краса назавжди!
             </p>
            </article>
             <article class="first-paragraf-images">
-                <img src="../Photos/mask.jpg" alt="mask">
+                <img class="image" src="../Photos/mask.svg" alt="mask">
                 <div class="first-paragraf-images-second-image">
-                    <img src="../Photos/mask1.jpg" alt="mask">
+                    <img class="image" src="../Photos/mask1.svg" alt="mask">
                 </div>
             </article>
         </section>
@@ -106,10 +108,10 @@
                 <div class="text-second-section">
                     <div class="squares-content">
                         <article class="squares">
-                            <h3>
+                            <h3 class="icons-title">
                                 <img src="../Photos/science.jpg" alt="медичнa освіту">
                             </h3>
-                            <p>
+                            <p class="squares-paragraf">
                                 Всі наші косметологи мають вищу медичну освіту
                                 та стаж роботи від 5 років
                             </p>
@@ -117,20 +119,20 @@
                     </div>
                     <div class="squares-content">
                         <article class="squares">
-                            <h3>
+                            <h3 class="icons-title">
                                 <img src="../Photos/products.jpg" alt="професійне обладнання">
                             </h3>
-                            <p>
+                            <p class="squares-paragraf">
                                 Використовуємо тільки професійне обладнання та косметику, перевірену часом
                             </p>
                         </article>
                     </div>
                     <div class="squares-content">
                         <article class="squares">
-                            <h3>
+                            <h3 class="icons-title">
                                 <img src="../Photos/advantages.jpg" alt="переваги">
                             </h3>
-                            <p>
+                            <p class="squares-paragraf">
                                 Наша мета - підкреслити переваги та приховати недоліки, а не переробити
                             </p>
                         </article>
@@ -138,11 +140,12 @@
                 </div>
         </section>
 
-      
+      <div class="background-wave"></div>
+
         <section class="main-third-section" id="Our-procedures">
        <button class="arrowes-button-1" type="button">
-        <svg class="arrowes-1">
-            <use href="../Photos/sprite.svg#icon-Arrow2">
+        <svg width="16" height="16" class="arrowes-2">
+            <use href="../Photos/sprite.svg#icon-Arrow2-3">
             </use>
         </svg>
        </button>
@@ -154,19 +157,19 @@
            <div class="images-third-section">
             <ul class="images-correction-third-section">
                 <li>
-                    <img src="../Photos/procedures.jpg" alt="procedures">
+                    <img src="../Photos/procedures.svg" alt="procedures">
                 </li>
                 <li>
-                    <img src="../Photos/procedures1.jpg" alt="procedures">
+                    <img src="../Photos/procedures1.svg" alt="procedures">
                 </li>
                 <li>
-                    <img src="../Photos/procedures2.jpg" alt="procedures">
+                    <img src="../Photos/procedures2.svg" alt="procedures">
                 </li>
             </ul>
            </div>
         <button class="arrowes-button-2" type="button">
-            <svg class="arrowes-2">
-                <use href="../Photos/sprite.svg#icon-Arrow2">
+            <svg width="16" height="16" class="arrowes-2">
+                <use href="../Photos/sprite.svg#icon-Arrow2-3">
                 </use>
             </svg>
         </button>
@@ -195,7 +198,7 @@
                        <div class="appointment">
                         <form action="http://127.0.0.1:5501/Beauty%20Zone/HTML/index.html" class="form-settings">
                             <label for="name"></label>
-                            <input class="input-settings" type="text" id="name" placeholder="Firts-name and Last-name" minlength="2" maxlength="20" name="f/lname" required>
+                            <input class="input-settings" type="text" id="name" placeholder="Firts-name and Last-name" minlength="2" maxlength="30" name="name" required>
                             <label for="phone"></label>
                             <input class="input-settings" type="tel" id="phone" placeholder="Enter your phone number:" name="phone"
                                 pattern="^\+[0-9]{12}" required>
@@ -258,10 +261,14 @@
                 <a class="footer-links" href="">Політика конфіденційності</a>
                 <p class="policy-footer-paragraf"> &copy; 2022 Дані захищені</p>
             </div>
+
+            <div class="footer-image">
+            </div>
         </section>
+      
     </footer>
 
-<div class="is-hidden">
+<div id="backdrop" class="hidden">
 <div class="backdrop-window">
 <section class="contact-and-info">
     <button class="close-button" type="button">
@@ -273,7 +280,7 @@
             та отримайте подарунок
         </h3>
         <div class="appointment">
-            <form action="./index.html" class="form-settings" name="contact-form" autocomplete="off">
+            <form action="../HTML/index.html" class="form-settings" name="contact-form" autocomplete="off">
                 <label for="name"></label>
                 <input class="input-settings" type="text" id="name" placeholder="Firts-name and Laxt-name" required
                     name="f/lname" minlength="2" maxlength="20">
@@ -282,7 +289,7 @@
                     pattern="\+[0-9]{12}" required>
                 <label for="email"></label>
                 <input class="input-settings" type="email" id="email" placeholder="Enter your email:" name="email" required>
-                <button type="button" class="submit-settings">Submit</button>
+                <button type="button" class="submit-settings-backdrop">Submit</button>
             </form>
             <p class="appointment-paragraf">
                 Натискаючи на кнопку я погоджуюсь з політикою конфіденційності
@@ -292,6 +299,6 @@
 </section>
 </div>
 </div>
-
+<script src="../scripts/script.js"></script>
 </body>
 </html>

@@ -1,0 +1,61 @@
+.background-wave {
+    width: 1850px;
+    height: 1785px;
+    z-index: -1;
+    background-image: url(../Photos/background-wave.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 1200px;
+    right: 0;
+
+}
+
+@keyframes spinAndScale {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+
+    50% {
+        transform: rotate(180deg) scale(1.5);
+    }
+
+    100% {
+        transform: rotate(360deg) scale(1);
+    }
+}
+
+.small-star {
+    position: absolute;
+    background-image: url(../Photos/small-star.svg);
+    width: 16px;
+    height: 16px;
+    top: 1000px;
+    left: 1400px;
+    transform: rotate(23deg);
+    animation: spinAndScale 4s infinite linear;
+}
+
+.medium-star {
+    position: absolute;
+    background-image: url(../Photos/medium-star.svg);
+    width: 40px;
+    height: 40px;
+    top: 750px;
+    left: 1450px;
+    transform: rotate(-30deg);
+    animation: spinAndScale 6s infinite linear;
+}
+
+.hudge-star {
+    position: absolute;
+    background-image: url(../Photos/hudge-star.svg);
+    background-repeat: no-repeat;
+    width: 64px;
+    height: 64px;
+    top: 1050px;
+    left: 1100px;
+    transform: rotate(30deg);
+    animation: spinAndScale 8s infinite linear;
+    z-index: -1;
+}

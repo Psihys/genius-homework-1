@@ -31,19 +31,32 @@
     justify-content: space-between;
 }
 
-.squares {
+.squares{
+    display: block;
+    width: 252px;
+    height: 135px;
+}
+
+.squares-content {
     width: 316px;
     height: 180px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
     border-radius: 32px;
     background-color: rgba(255, 255, 255, 1);
     box-shadow: 0px 4px 4px 0px rgba(168, 198, 245, 0.38);
 }
 
-.squares-content {
-    display: flex;
-    justify-content: center;
-    align-self: center;
+.squares-paragraf{
+    text-align: center;
     width: 252px;
-    height: 133px;
-    gap: 8px;
+    height: 73px;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.icons-title{
+    height: 50px;
 }
