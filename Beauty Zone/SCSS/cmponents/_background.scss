@@ -34,6 +34,10 @@
     left: 1400px;
     transform: rotate(23deg);
     animation: spinAndScale 4s infinite linear;
+
+    @media screen and (max-width: 480px) {
+           display: none;
+        }
 }
 
 .medium-star {
@@ -46,6 +50,10 @@
     left: 1450px;
     transform: rotate(-30deg);
     animation: spinAndScale 6s infinite linear;
+
+    @media screen and (max-width: 480px) {
+            display: none;
+        }
 }
 
 .hudge-star {
@@ -59,4 +67,13 @@
     transform: rotate(30deg);
     animation: spinAndScale 8s infinite linear;
     z-index: -1;
+
+    @media screen and (max-width: 480px) {
+            top: 720px;
+            left: 350px;
+            width: 40px;
+            height: 40px;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
 }

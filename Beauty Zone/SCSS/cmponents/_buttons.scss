@@ -1,0 +1,23 @@
+.mobile-menu{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    transform: translateX(100%);
+    transition: transform 0.3s ;
+
+    &.is-open{
+        transform: translateX(0);
+    }
+}
+
+.close-burger-button{
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    border: 2px solid rgba(1, 28, 68, 1);
+    top: 16px;
+    right: 20px;
+}
