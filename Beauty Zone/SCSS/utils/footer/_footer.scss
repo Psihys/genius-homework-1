@@ -79,11 +79,12 @@
         margin: 0;
 }
  .footer-image {
+    display: block;
      background-image: url(../Photos/footer-image.svg);
      background-repeat: no-repeat;
      position: absolute;
      width: 278px;
      height: 213px;
-     right: 100px;
+     right: 200px;
      top: 3165px;
  }

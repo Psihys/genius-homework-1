@@ -21,11 +21,12 @@
     border: 1px solid black;
     border-radius: 50%;
     transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+    cursor: pointer;
 }
 
 .arrowes-1 {
-    width: 16px;
-    height: 16px;
+    width: 44px;
+    height: 44px;
 }
 
 .arrowes-button-2 {
@@ -40,11 +41,13 @@
     border: 1px solid black;
     border-radius: 50%;
     transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+    cursor: pointer;
 }
 
 .arrowes-2 {
-    width: 16px;
-    height: 16px;
+    width: 44px;
+    height: 44px;
+    transform: rotate(180deg);
 }
 
 .arrowes-button-1:hover {
