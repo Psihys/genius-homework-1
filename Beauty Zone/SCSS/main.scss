@@ -13,13 +13,30 @@
 
 } */
 
-@import './utils/header/_header.scss';
-@import './utils/main/_first-section.scss';
-@import'./utils/main/_second-section.scss';
-@import'./utils/main/_third-section.scss';
-@import'./utils/main/_last-section.scss';
-@import'./utils/footer/_footer.scss';
-@import'./utils/utils/_utils';
+
+
+@import './base';
 @import './cmponents/background';
-@import './utils/utils/variables';
 @import './cmponents/buttons';
+@import './cmponents/links';
+@import './utils/extra/mixins';
+@import './utils/header/header';
+@import './utils/main/first-section';
+@import './utils/main/second-section';
+@import './utils/main/third-section';
+@import './utils/main/last-section';
+@import './utils/footer/footer';
+@import './utils/utils/utils';
+@import './utils/utils/variables';
+
+
+// @import './utils/header/_header.scss';
+// @import './utils/main/_first-section.scss';
+// @import'./utils/main/_second-section.scss';
+// @import'./utils/main/_third-section.scss';
+// @import'./utils/main/_last-section.scss';
+// @import'./utils/footer/_footer.scss';
+// @import'./utils/utils/_utils';
+// @import './cmponents/background';
+// @import './utils/utils/variables';
+// @import './cmponents/buttons';
