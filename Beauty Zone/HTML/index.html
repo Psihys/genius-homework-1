@@ -10,6 +10,7 @@
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
     <link href="../SCSS/main.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beauty zone</title>
@@ -164,18 +165,23 @@
                 Наші <span>процедури</span>
             </h2>
            </div>
-           <div class="images-third-section">
-            <ul class="images-correction-third-section">
+           <div class="images-third-section swiper-container">
+            <ul class="images-correction-third-section swiper-wrapper">
                 <li>
-                    <img src="../Photos/procedures.svg" alt="procedures">
+                    <img class="swiper-slide" src="../Photos/procedures.svg" alt="procedures">
                 </li>
                 <li>
-                    <img src="../Photos/procedures1.svg" alt="procedures">
+                    <img class="swiper-slide" src="../Photos/procedures1.svg" alt="procedures">
                 </li>
                 <li>
-                    <img src="../Photos/procedures2.svg" alt="procedures">
-                </li>
+                    <img class="swiper-slide" src="../Photos/procedures2.svg" alt="procedures">
+                </li>   
             </ul>
+           </div>
+           <div class="pagination">
+            <button class="pagination__button" type="button" aria-label="Go to slide1"></button>
+            <button class="pagination__button" type="button" aria-label="Go to slide2"></button>
+            <button class="pagination__button" type="button" aria-label="Go to slide3"></button>
            </div>
         <button class="arrowes-button-2" type="button">
             <svg width="16" height="16" class="arrowes-2">
@@ -235,7 +241,7 @@
             <a class="logo-footer" href="./First.html">Beauty zone</a>
             <nav>
                 <ul class="info-about-us">
-                    <li><a class="footer-links" href="#about-us"><span>Про нас</span></a></li>
+                    <li><a class="footer-links" href="#about-us">Про нас</a></li>
                     <li><a class="footer-links" href="#why-we">Чому ми</a></li>
                     <li><a class="footer-links" href="#Our-procedures">Наші процедури</a></li>
                     <li><a class="footer-links" href="#How-to-find-us">Контакти</a></li>
@@ -269,6 +275,23 @@
             </address>
             <div class="policy-footer">
                 <a class="footer-links" href="">Політика конфіденційності</a>
+                <ul class="mobile-footer-icons">
+                    <li>
+                        <a href="tel:+380960000007">
+                            <img src="../Photos/telefoon-footer.svg" alt="phone">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/">
+                            <img src="../Photos/facebook-footer.svg" alt="facebook">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/">
+                            <img src="../Photos/instagram-footer.svg" alt="instagram">
+                        </a>
+                    </li>
+                </ul>
                 <p class="policy-footer-paragraf"> &copy; 2022 Дані захищені</p>
             </div>
 
@@ -309,6 +332,9 @@
 </section>
 </div>
 </div>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="../scripts/script.js"></script>
+<script src="../scripts/formats-slider.js"></script>
 </body>
 </html>

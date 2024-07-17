@@ -8,6 +8,12 @@
     width: 1440px;
     height: 280px;
     background: rgba(1, 28, 68, 1);
+
+    @media screen and (max-width: 480px){
+        width: 360px;
+        height: 390px;
+        margin: 0;
+    }
 }
 
 .footer-section {
@@ -17,6 +23,15 @@
     margin: auto;
     width: 1240px;
     height: 166px;
+
+    @media screen and (max-width: 480px){
+       justify-content: space-around;
+        width: 180px;
+            height: 290px;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+    }
 }
 
 .logo-footer {
@@ -26,14 +41,23 @@
     font-size: 24px;
     font-weight: 700;
     color: rgba(43, 127, 255, 1);
+
+    @media screen and (max-width: 480px){
+        width: 57px;
+        height: 30px;
+        font-size: 16px;
+    }
 }
 
 .footer-links {
     color: rgba(255, 255, 255, 1);
-    ;
     font-family: Roboto;
     font-size: 16px;
     font-weight: 400;
+
+    @media screen and (max-width: 480px){
+        font-size: 14px;
+    }
 }
 
 .info-about-us {
@@ -54,6 +78,10 @@
     width: 190px;
     height: 166px;
     gap: 16px;
+
+    @media screen and (max-width: 480px){
+        display: none;
+    }
 }
 
 .policy-footer {
@@ -69,6 +97,10 @@
     font-size: 13px;
     font-weight: 400;
     color: rgba(116, 114, 114, 1);
+
+    @media screen and (max-width: 480px){
+        margin: 0;
+    }
 }
 .footer-icons{
     width: 160px;
@@ -85,6 +117,25 @@
      position: absolute;
      width: 278px;
      height: 213px;
-     right: 200px;
+     right: 100px;
      top: 3165px;
+
+    @media screen and (max-width: 480px){
+        display: none;
+    }
+ }
+
+ .mobile-footer-icons {
+     width: 160px;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     padding: 0;
+     margin: 0;
+
+    @media screen and (max-width: 480px){
+        width: 136px;
+        height: 32px;
+        padding-left: 32px;
+    }
  }

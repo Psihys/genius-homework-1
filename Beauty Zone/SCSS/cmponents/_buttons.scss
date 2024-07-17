@@ -21,3 +21,24 @@
     top: 16px;
     right: 20px;
 }
+
+.pagination{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    &__button{
+        background: rgba(116, 114, 114, 1);
+        border-radius: 50%;
+        width: 15px;
+        height: 15px;
+        cursor: pointer;
+        }
+    
+
+    &__button:hover{
+        background: rgba(43, 127, 255, 1);
+    }
+}

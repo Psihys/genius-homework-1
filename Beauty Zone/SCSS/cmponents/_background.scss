@@ -9,6 +9,12 @@
     top: 1200px;
     right: 10px;
 
+    @media screen and (max-width: 480px) {
+        width: 985px;
+        height: 970px;
+        top: 650px;
+        left: -260px;
+    }
 }
 
 @keyframes spinAndScale {
@@ -31,7 +37,7 @@
     width: 16px;
     height: 16px;
     top: 1000px;
-    left: 1400px;
+    left: 1300px;
     transform: rotate(23deg);
     animation: spinAndScale 4s infinite linear;
 
@@ -47,7 +53,7 @@
     width: 40px;
     height: 40px;
     top: 750px;
-    left: 1450px;
+    left: 1350px;
     transform: rotate(-30deg);
     animation: spinAndScale 6s infinite linear;
 
@@ -63,14 +69,14 @@
     width: 64px;
     height: 64px;
     top: 1050px;
-    left: 1200px;
+    left: 1100px;
     transform: rotate(30deg);
     animation: spinAndScale 8s infinite linear;
     z-index: -1;
 
     @media screen and (max-width: 480px) {
             top: 720px;
-            left: 350px;
+            left: 300px;
             width: 40px;
             height: 40px;
             background-repeat: no-repeat;
