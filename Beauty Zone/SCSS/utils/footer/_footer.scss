@@ -125,16 +125,18 @@
  }
 
  .mobile-footer-icons {
-     width: 160px;
-     display: flex;
-     flex-direction: row;
-     justify-content: space-between;
-     padding: 0;
-     margin: 0;
+    display: none;
+     
 
     @media screen and (max-width: 480px){
         width: 136px;
         height: 32px;
         padding-left: 32px;
+        display: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 0;
+            margin: 0;
     }
  }
