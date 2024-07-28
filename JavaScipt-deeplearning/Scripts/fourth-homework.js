@@ -139,16 +139,17 @@
 
 // c();
 
-console.log(document);
+// console.log(document);
 
-const addNumber = (nummber) => {
-    let sum = Number(nummber) + 10;
-    return console.log(sum)
-}
+// const addNumber = (nummber) => {
+//     let sum = Number(nummber) + 10;
+//     return console.log(sum)
+// }
 
-const number = document.querySelector('input[name="number"]')
-const button = document.querySelector("button")
+// const number = document.querySelector('input[name="number"]')
+// const button = document.querySelector("button")
 
-button.addEventListener('click', () => addNumber(number.value));
+// button.addEventListener('click', () => addNumber(number.value));
 
-console.log(button)
+// console.log(button)
+

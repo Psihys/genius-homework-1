@@ -1,61 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css.css">
+    <title>Image Carousel</title>
+    <!-- Include Splide CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css">
 </head>
+
 <body>
-    
-    <button class="arrowes-button-1" type="button">
-        <svg width="16" height="16" class="arrowes-1">
-            <use href="../Beauty Zone//Photos/sprite.svg#icon-Arrow2-3"></use>
-        </svg>
-    </button>
-    
-    <div>
-        <h2 class="title-third-section">
-            Наші <span>процедури</span>
-        </h2>
+
+    <!-- Carousel Structure -->
+    <div class="splide">
+        <div class="splide__track">
+            <ul class="splide__list">
+                <li class="splide__slide">
+                    <img src="../Beauty Zone/Photos/procedures.svg" alt="procedures">
+                </li>
+                <li class="splide__slide">
+                    <img src="../Beauty Zone/Photos/procedures1.svg" alt="procedures">
+                </li>
+                <li class="splide__slide">
+                    <img src="../Beauty Zone/Photos/procedures2.svg" alt="procedures">
+                </li>
+                <li class="splide__slide">
+                    <img src="../Beauty Zone/Photos/procedures.svg" alt="procedures">
+                </li>
+                <li class="splide__slide">
+                    <img src="../Beauty Zone/Photos/procedures1.svg" alt="procedures">
+                </li>
+                <li class="splide__slide">
+                    <img src="../Beauty Zone/Photos/procedures2.svg" alt="procedures">
+                </li>
+            </ul>
+        </div>
     </div>
-    
-    <div class="images-third-section swiper-container">
-        <ul class="images-correction-third-section swiper-wrapper">
-            <li class="swiper-slide">
-                <img src="../Beauty Zone/Photos/procedures.svg" alt="procedures">
-            </li>
-            <li class="swiper-slide">
-                <img src="../Beauty Zone/Photos/procedures1.svg" alt="procedures">
-            </li>
-            <li class="swiper-slide">
-                <img src="../Beauty Zone/Photos/procedures2.svg" alt="procedures">
-            </li>
-            <li class="swiper-slide">
-                <img src="../Beauty Zone/Photos/procedures.svg" alt="procedures">
-            </li>
-            <li class="swiper-slide">
-                <img src="../Beauty Zone/Photos/procedures1.svg" alt="procedures">
-            </li>
-            <li class="swiper-slide">
-                <img src="../Beauty Zone/Photos/procedures2.svg" alt="procedures">
-            </li>
-        </ul>
-    </div>
-    
-    <div class="pagination">
-        <button class="pagination__button" type="button" aria-label="Go to slide 1"></button>
-        <button class="pagination__button" type="button" aria-label="Go to slide 2"></button>
-        <button class="pagination__button" type="button" aria-label="Go to slide 3"></button>
-    </div>
-    
-    <button class="arrowes-button-2" type="button">
-        <svg width="16" height="16" class="arrowes-2">
-            <use href="../Beauty Zone//Photos/sprite.svg#icon-Arrow2-3"></use>
-        </svg>
-    </button>
+
+    <!-- Navigation Arrows -->
+  
 
 
-    <script src="./script.js"></script>
+    <!-- Include Splide JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/js/splide.min.js"></script>
+
+    <!-- Initialize Splide -->
+    <script>
+        var splide = new Splide('.splide', {
+            type: 'loop',
+            perPage: 3,
+            perMove: 1,
+            pagination: true,
+            arrows: true,
+            breakpoints: {
+                480: {
+                    perPage: 1,
+                },
+                 760: {
+                    perPage: 2,
+                },
+            },
+        });
+
+        splide.mount();
+    </script>
+
 </body>
+
 </html>

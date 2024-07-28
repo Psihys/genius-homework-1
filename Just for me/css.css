@@ -1,85 +1,102 @@
-.arrowes-button-1 {
+/* Basic styling for the body and carousel container */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    align-self: flex-start;
-    background: transparent;
-    border: 0;
-    border-radius: 50%;
-    transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
-    cursor: pointer;
+    height: 100vh;
+    background-color: #f0f0f0;
 }
 
-.arrowes-1 {
-    width: 44px;
-    height: 44px;
-}
-
-.arrowes-button-2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    align-self: flex-end;
-    background: transparent;
-    border: 0;
-    border-radius: 50%;
-    transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
-    cursor: pointer;
-}
-
-.arrowes-2 {
-    width: 44px;
-    height: 44px;
-    transform: rotate(180deg);
-}
-
-.arrowes-button-1:hover {
-    fill: white;
-    background: rgba(43, 127, 255, 1);
-    border: 0.77px solid rgba(255, 255, 255, 1)
-}
-
-.arrowes-button-2:hover {
-    fill: white;
-    background: rgba(43, 127, 255, 1);
-    border: 0.77px solid rgba(255, 255, 255, 1)
-}
-
-.title-third-section {
+.splide {
+    width: 80%;
+    max-width: 800px;
+    margin: auto;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
     position: relative;
-    text-align: center;
-    width: 510px;
-    height: 75px;
-    margin: auto;
-    font-family: 'Play';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 64px;
-    line-height: 74px;
+    /* Ensure arrows are positioned relative to the container */
+}
 
-    @media screen and (max-width: 480px) {
-        width: 255px;
-        height: 40px;
-        font-size: 32px;
-        line-height: 0;
+/* Styling for the slides */
+.splide__slide img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Styling for navigation arrows */
+.splide__arrow {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.splide__arrow--prev {
+    left: -2rem;
+    /* Adjust as needed to position to the left of the carousel */
+}
+
+.splide__arrow--next {
+    right: -2rem;
+    /* Adjust as needed to position to the right of the carousel */
+}
+
+.arrowes-1,
+.arrowes-2 {
+    fill: #333;
+}
+
+/* Styling for pagination buttons */
+.splide__pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.splide__pagination__page {
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background: #ddd;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.splide__pagination__page.is-active {
+    background: #333;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 480px) {
+    .splide {
+        width: 100%;
     }
-}
 
-.images-third-section {
-    margin: auto;
-    display: flex;
-    flex-direction: row;
-    align-self: flex-end;
-    max-width: 1200px;
-    height: 500px;
-}
+    .splide__arrow--prev,
+    .splide__arrow--next {
+        left: 0;
+        right: 0;
+        top: auto;
+        bottom: -2rem;
+        transform: translateX(-50%);
+    }
 
-.images-correction-third-section {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 20px;
-    padding: 0%;
+    .splide__arrow--prev {
+        left: 25%;
+    }
+
+    .splide__arrow--next {
+        right: 25%;
+    }
 }
