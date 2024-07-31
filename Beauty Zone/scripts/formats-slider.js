@@ -16,7 +16,7 @@ const swiper = new Swiper('.swiper-container', {
         el: '.pagination',
     },
     navigation: {
-        nextEl: '.arrowes-button-1',
-        prevEl: '.arrowes-button-2'
+        nextEl: '.arrowes-button-2',
+        prevEl: '.arrowes-button-1'
     }
 });
