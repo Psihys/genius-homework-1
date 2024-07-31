@@ -153,3 +153,40 @@
 
 // console.log(button)
 
+// Домашнє завдання
+
+// Перепишіть функцію, використовуючи '?' або '||'
+// function checkAge(age) {
+// if (age > 18) {
+// return true;
+// } else {
+// return confirm('Батьки дозволили?');
+// }
+// }
+
+// function checkAge(age) {
+//   return age > 18 ? true : confirm('Батьки дозволили?');
+// }
+// function checkAge(age) {
+//   return age > 18 || confirm('Батьки дозволили?');
+// }
+
+// Напишіть функцію min(a, b), яка повертає менше з двох чисел a та b.
+
+// function min(a, b) {
+//   if (a < b) {
+//     return a;
+//   } else {
+//     return b;
+//   }
+// }
+// function ask(question, yes, no) {
+//   if (confirm(question)) yes();
+//   else no();
+// }
+
+// ask(
+//   "Ви згодні?",
+//   () => alert("Ви погодились."),
+//   () => alert("Ви скасували виконання.")
+// );
