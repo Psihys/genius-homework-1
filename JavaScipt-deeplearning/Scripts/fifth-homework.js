@@ -1,51 +1,51 @@
 // Домашнє завдання
 
 // 1) написати об*єкт студента який буде виводити ім*я, спеціальнісь, середній бал і кількість пропущених занять
-function studentInfo(){
-        console.log(this.name);
-            console.log(this.specialty);
-            console.log(this.averageGrade);
-            console.log(this.missedClasses);
-}
+// function studentInfo(){
+//         console.log(this.name);
+//             console.log(this.specialty);
+//             console.log(this.averageGrade);
+//             console.log(this.missedClasses);
+// }
 
-const student = [
-    {
-        name: "Bohdan Shevchenko",
-        specialty: "Комп'ютерні науки",
-        averageGrade: 5,
-        missedClasses: 3,
-        studentInfo: studentInfo,
-        info: function (city) {
-       console.log(this.name);
-            console.log(this.specialty);
-            console.log(this.averageGrade);
-            console.log(this.missedClasses);
-            console.log(city);
-   },
-    },
-      {
-        name: "Vova",
-        specialty: "Комп'ютерні науки",
-        averageGrade: 4,
-          missedClasses: 7,
-          studentInfo: studentInfo,
-          logInfo: function (job,city) {
-              console.group(`${name} info:`)
-              console.log(`Name is: ${this.name}`); 
-              console.log(`Name is: ${job}`);
-              console.log(`Name is: ${city}`);
-              console.groupEnd();
-        }
-    },
-        {
-        name: "DIma",
-        specialty: "Комп'ютерні науки",
-        averageGrade: 3,
-        missedClasses: 33,
-        studentInfo: studentInfo,
+// const student = [
+//     {
+//         name: "Bohdan Shevchenko",
+//         specialty: "Комп'ютерні науки",
+//         averageGrade: 5,
+//         missedClasses: 3,
+//         studentInfo: studentInfo,
+//         info: function (city) {
+//        console.log(this.name);
+//             console.log(this.specialty);
+//             console.log(this.averageGrade);
+//             console.log(this.missedClasses);
+//             console.log(city);
+//    },
+//     },
+//       {
+//         name: "Vova",
+//         specialty: "Комп'ютерні науки",
+//         averageGrade: 4,
+//           missedClasses: 7,
+//           studentInfo: studentInfo,
+//           logInfo: function (job,city) {
+//               console.group(`${name} info:`)
+//               console.log(`Name is: ${this.name}`); 
+//               console.log(`Name is: ${job}`);
+//               console.log(`Name is: ${city}`);
+//               console.groupEnd();
+//         }
+//     },
+//         {
+//         name: "DIma",
+//         specialty: "Комп'ютерні науки",
+//         averageGrade: 3,
+//         missedClasses: 33,
+//         studentInfo: studentInfo,
  
-    },
-];
+//     },
+// ];
 
 
 
@@ -57,8 +57,8 @@ const student = [
 // student[0].info.bind(student[1])("Kiyv");
 // student[0].info.bind(student[1])("Odessa");
 
-student[1].logInfo.call(student[1], "developer", "Kiyv");
-student[1].logInfo.apply(student[1],["developer", "Kiyv"]);
+// student[1].logInfo.call(student[1], "developer", "Kiyv");
+// student[1].logInfo.apply(student[1],["developer", "Kiyv"]);
 // studentInfo.apply(student[0]);
 
 
