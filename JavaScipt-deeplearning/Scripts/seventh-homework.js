@@ -88,22 +88,22 @@
 // let Ivan = new User("Ivan");
 // Ivan.messageHello();
 
-let number = prompt("Write number");
+// let number = prompt("Write number");
 
-function show(number) {
-    for (let i = 2; i <= number; i++) {
-        let isPrime = true;
-        for (let j = 2; j < i; j++) {
-            if (i % j == 0) {
-                isPrime = false;
-                break;
-            }
-        }
-        if (isPrime) {
-            console.log(i);
-        }
-    }
-}
+// function show(number) {
+//     for (let i = 2; i <= number; i++) {
+//         let isPrime = true;
+//         for (let j = 2; j < i; j++) {
+//             if (i % j == 0) {
+//                 isPrime = false;
+//                 break;
+//             }
+//         }
+//         if (isPrime) {
+//             console.log(i);
+//         }
+//     }
+// }
 
-show(number);
+// show(number);
 
