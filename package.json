@@ -1,5 +1,15 @@
 {
   "dependencies": {
     "uuid": "^10.0.0"
-  }
+  },
+  "name": "genius-homework-1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "hello" : "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }
