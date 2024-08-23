@@ -1,0 +1,10 @@
+.block{
+    padding: 50px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100px;
+}
