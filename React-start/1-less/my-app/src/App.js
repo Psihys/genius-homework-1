@@ -1,14 +1,21 @@
-import logo from './logo.svg';
+import HelloWorldComponent from './HelloWorldComponent';
+import { createElement } from 'react';
 import './App.css';
+import MyClassComponent from './MyClassComponent';
 
 function App() {
+  // const childElement = createElement('div', {className: 'greeting-hello'}, 'Hello again' )
+  // const rootElemnt = createElement('h1', {className: 'greeting'}, childElement)
+  const hello = "Hello world"
+  let number = 1;
+  // return rootElemnt
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
+        <p>{hello}</p>
         <a
           className="App-link"
           href="https://reactjs.org"
@@ -17,6 +24,8 @@ function App() {
         >
           Learn React
         </a>
+        {number === 1 ? <HelloWorldComponent /> : 'Thewre is no component found'}
+        {<MyClassComponent/>}
       </header>
     </div>
   );
