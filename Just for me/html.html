@@ -1,70 +1,40 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Carousel</title>
-    <!-- Include Splide CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css">
+    <title>Обратная связь</title>
 </head>
 
-<body>
+<body style="background-color: lightblue">
+    <h1>Обратная связь</h1>
+    <form id="userForm">
+        <label for="name">Имя:</label>
+        <input type="text" id="name" name="name"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+        <button type="button" id="button">Отправить</button>
+    </form>
 
-    <!-- Carousel Structure -->
-    <div class="splide">
-        <div class="splide__track">
-            <ul class="splide__list">
-                <li class="splide__slide">
-                    <img src="../Beauty Zone/Photos/procedures.svg" alt="procedures">
-                </li>
-                <li class="splide__slide">
-                    <img src="../Beauty Zone/Photos/procedures1.svg" alt="procedures">
-                </li>
-                <li class="splide__slide">
-                    <img src="../Beauty Zone/Photos/procedures2.svg" alt="procedures">
-                </li>
-                <li class="splide__slide">
-                    <img src="../Beauty Zone/Photos/procedures.svg" alt="procedures">
-                </li>
-                <li class="splide__slide">
-                    <img src="../Beauty Zone/Photos/procedures1.svg" alt="procedures">
-                </li>
-                <li class="splide__slide">
-                    <img src="../Beauty Zone/Photos/procedures2.svg" alt="procedures">
-                </li>
-            </ul>
-        </div>
-    </div>
-
-    <!-- Navigation Arrows -->
-  
-
-
-    <!-- Include Splide JS -->
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/js/splide.min.js"></script>
-
-    <!-- Initialize Splide -->
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <script>
-        var splide = new Splide('.splide', {
-            type: 'loop',
-            perPage: 3,
-            perMove: 1,
-            pagination: true,
-            arrows: true,
-            breakpoints: {
-                480: {
-                    perPage: 1,
-                },
-                 760: {
-                    perPage: 2,
-                },
-            },
-        });
+        const tg = window.Telegram.WebApp;
 
-        splide.mount();
+        
+
+        const submitForm = () => {
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+            console.log("Отправляем данные: ", { name: name, email: email });
+            // Отправка данных в Telegram
+            tg.sendData(JSON.stringify({ name: name, email: email }));
+        }
+
+        const button = document.getElementById("button");
+        button.addEventListener("click", submitForm)
     </script>
-
 </body>
 
 </html>
