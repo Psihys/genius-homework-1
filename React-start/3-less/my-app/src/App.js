@@ -1,16 +1,12 @@
 
 import './App.css';
-import CounterComponent from './CounterComponents';
-import ListComponent from './ListComponent';
-
+import RenderComponent from './RenderComponent';
 
 function App() {
- 
   return (
     <div className="App">
       <header className="App-header">
-         <ListComponent/>
-         <CounterComponent/>
+       <RenderComponent/>
       </header>
     </div>
   );
