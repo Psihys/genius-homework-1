@@ -4,13 +4,19 @@ import './App.css';
 
 
 
-function App() {
-
+const ListComponent = () => {
+  const initialValue = [
+    { id: 1, name: 'first element' },
+    { id: 2, name: 'second element' },
+    { id: 3, name: 'third element' },
+  ];
+  
   const [input, setInput] = useState('');
-  const [item, setItem] = useState([])
+  const [item, setItem] = useState(initialValue)
   const count = item.length
+  
   const ItemComponents = (input) => {
-    const UpdateComponents = [...item, input]
+    const UpdateComponents = [...item, {id: item.length + 1, name:input}]
     setItem(UpdateComponents)
     setInput('')
   }
@@ -24,6 +30,12 @@ function App() {
       ItemComponents(input);
     }
   }
+
+const deleteItem = (id) => {
+  const updatedItems = item.filter(item => item.id !== id);
+  setItem(updatedItems);
+};
+
   return (
     <div className="App">
       <header className="App-header">
@@ -31,8 +43,9 @@ function App() {
         <p>{count}</p>
         <ul>
            {item.map((element) => (
-            <li key={element}>{element}</li>
-          ))}
+            <li key={element.id}>{element.name} <br></br> <button onClick={() =>deleteItem(element.id)}>Delete element</button> </li>
+           ))}
+          
         </ul>
         <button onClick={() => ItemComponents(input)}>Add To Do </button>
       </header>
@@ -40,4 +53,4 @@ function App() {
   );
 }
 
-export default App;
+export default ListComponent;
