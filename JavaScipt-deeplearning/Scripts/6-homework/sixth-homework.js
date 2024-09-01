@@ -146,3 +146,38 @@
 
 // console.log(coffeeMachineNew)
 
+
+// class Abonent {
+//     constructor(){
+//         this.name = '';
+//         this.phoneNumber = '';
+//     }
+//     set(name, phoneNumber) {
+//         this.name = name;
+//         this.phoneNumber = phoneNumber;
+//     }
+
+//     get() {
+//         return `Name: ${this.name}\nPhone Number: ${this.phoneNumber}`;
+//     }
+// }
+
+// const user1 = new Abonent()
+// const user2 = new Abonent()
+// const user3 = new Abonent()
+
+// user1.set('John Doe', '123-456-7890');
+// user2.set('Jane Smith', '098-765-4321');
+// user3.set('Alice Johnson', '555-123-4567');
+
+// // Виведення даних про кожного абонента
+// console.log('user 1:');
+// console.log(user1.get());
+// console.log('');
+
+// console.log('user 2:');
+// console.log(user2.get());
+// console.log('');
+
+// console.log('user 3:');
+// console.log(user3.get());

@@ -118,19 +118,65 @@
 //     console.log("Finally ")
 // );
 
-new Promise(function (resolve, reject) {
-    setTimeout(() => resolve(2), 2);
-}).then(
-    function (result) {
-        console.log(result)
-        return new Promise((resolve, reject) => {
-            setTimeout(() => resolve(result + 5), 1000);
-             console.log(result)
-        })
+// new Promise(function (resolve, reject) {
+//     setTimeout(() => resolve(2), 2);
+// }).then(
+//     function (result) {
+//         console.log(result)
+//         return new Promise((resolve, reject) => {
+//             setTimeout(() => resolve(result + 5), 1000);
+//              console.log(result)
+//         })
        
-    }
-).then(
-    function (result) {
-        console.log(result)
-    }
-)
+//     }
+// ).then(
+//     function (result) {
+//         console.log(result)
+//     }
+// )
+
+// function printNumbersInterval(from, to) {
+//     let current = from;
+//     const intervalId = setInterval(() => {
+//         console.log(current);
+//         if (current === to) {
+//             clearInterval(intervalId); 
+//         }
+//         if (current > to) {
+//              clearInterval(intervalId);
+//         } 
+//         current++
+//     }, 1000); 
+// }
+
+
+// printNumbersInterval(0, 5);
+
+
+// function printNumbersTimeout(from, to) {
+//     function printNext(current) {
+//         console.log(current);
+//         if (current < to) {
+//             setTimeout(() => printNext(current + 1), 1000); 
+//         }
+//     }
+    
+//     printNext(from); 
+// }
+
+// printNumbersTimeout(10, 15);
+
+
+// function delay(ms) {
+//     return new Promise((resolve) => {
+//         setTimeout(() => {
+//             resolve(); // Перевести проміс в стан resolved після затримки
+//         }, ms);
+//     });
+// }
+
+// // Приклад використання:
+// delay(1000) // Затримка на 2000 мілісекунд (2 секунди)
+//     .then(() => {
+//         console.log('1 секундa пройшлa!');
+//     });

@@ -107,3 +107,27 @@
 
 // show(number);
 
+function Calculator() {
+    this.read = function () {
+        this.a = parseFloat(prompt('Enter the first number: '));
+        this.b = parseFloat(prompt('Enter the second number:'));
+    }
+
+    this.sum = function () {
+        let result = this.a + this.b;
+        alert(result)
+        return result
+    }
+
+    this.mul = function () {
+        let result = this.a * this.b;
+        alert(result)
+        return result
+    }
+}
+
+const calculator = new Calculator();
+
+calculator.read()
+console.log(calculator.sum())
+console.log(calculator.mul())

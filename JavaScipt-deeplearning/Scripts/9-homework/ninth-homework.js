@@ -20,3 +20,19 @@
 // console.log(element.classList.contains("red"))
 // console.log(element.classList.remove("red"))
 // console.log(element.classList.contains("red"))
+
+
+let text = document.getElementById('text')
+
+let button = document.getElementById('textButton')
+
+
+const hideElement = () => {
+    text.classList.add('hidden')
+}
+button.addEventListener('click', hideElement)
+const hideButton = () => {
+    button.classList.add('hidden')
+}
+
+button.addEventListener('click',hideButton)
